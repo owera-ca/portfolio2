@@ -59,8 +59,8 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                         {/* Logo */}
                         <div className="flex-shrink-0">
-                            <Link to="/" className="text-3xl font-bold tracking-tighter text-dark">
-                                OWERA<span className="text-primary">.</span>
+                            <Link to="/" className="flex items-center">
+                                <img src="/logo.png" alt="Owera" className="h-24 w-auto" />
                             </Link>
                         </div>
 
