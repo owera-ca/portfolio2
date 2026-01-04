@@ -1,16 +1,63 @@
-# React + Vite
+# Owera Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium software consulting portfolio website built with React, Vite, and a custom minimalist design system.
 
-Currently, two official plugins are available:
+![Owera Logo](/public/logo.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## React Compiler
+This project is a modern, responsive portfolio website for **Owera**, featuring a clean, minimalist aesthetic with a focus on high-performance digital solutions.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Design System
+- **Theme**: Minimalist Yellow (`#FFD600`) & White.
+- **Typography**: `Afacad` (Sans-serif).
+- **Styling**: Tailwind CSS v4 with custom `@theme` configuration.
+- **Key Elements**: Sharp corners, bold typography, yellow accents.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework**: React 18
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS (v4), PostCSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Routing**: React Router DOM
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v18+)
+- npm
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/owera-ca/portfolio2.git
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Build for production:
+   ```bash
+   npm run build
+   ```
+
+## Project Structure
+
+- `src/components`: Reusable UI components (Navbar, Footer, Layout).
+- `src/pages`: Page components (Home, Services, Projects, Contact).
+- `src/index.css`: Global styles and Tailwind v4 theme configuration.
+- `src/App.jsx`: Main application routing.
+
+## License
+
+All rights reserved © 2026 Owera.
