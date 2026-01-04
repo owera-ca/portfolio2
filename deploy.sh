@@ -3,6 +3,17 @@ set -e
 
 echo "Deploying OWERA Portfolio..."
 
+# Load NVM/Node environment (fix for non-interactive shell)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# If nvm isn't used, try loading .bashrc directly
+# source ~/.bashrc
+
+echo "Node version: $(node -v)"
+echo "NPM version: $(npm -v)"
+
 # 1. Pull latest changes
 echo "Pulling latest changes from git..."
 git pull origin main
