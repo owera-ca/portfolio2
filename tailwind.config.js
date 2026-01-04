@@ -8,19 +8,19 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#0119ff', // Electric Blue - Tekup Primary
-          dark: '#0000cc',
-          light: '#3344ff',
+          DEFAULT: '#FFD600', // Vibrant Yellow
+          dark: '#E5C100', // Slightly darker yellow for hover
+          light: '#FFE566',
         },
         dark: {
-          DEFAULT: '#11121c', // Richer deep navy/black
-          card: '#1a1b26',
-          input: '#232433',
+          DEFAULT: '#000000', // Pure black for minimalist contrast
+          card: '#F9F9F9', // Very light gray for cards in light mode
+          input: '#F3F4F6',
         },
         light: {
           DEFAULT: '#ffffff',
-          alt: '#f8f9fa',
-          border: '#eef0f2',
+          alt: '#FAFAFA',
+          border: '#E5E7EB',
         }
       },
       fontFamily: {
@@ -34,12 +34,12 @@ export default {
         lg: '0px',
         xl: '0px',
         '2xl': '0px',
-        '3xl': '0px', // Ensure absolutely no rounded corners for main UI
-        full: '9999px', // Only for strictly circular elements (avatars)
+        '3xl': '0px',
+        full: '9999px',
       },
       boxShadow: {
-        'tekup': '0 4px 20px rgba(1, 25, 255, 0.15)', // Custom glow
-        'tekup-hover': '0 8px 30px rgba(1, 25, 255, 0.25)',
+        'minimal': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
+        'minimal-hover': '0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025)',
       }
     },
   },

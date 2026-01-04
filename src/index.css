@@ -1,9 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #FFD600;
+  --color-primary-dark: #E5C100;
+  --color-primary-light: #FFE566;
+
+  --color-dark: #000000;
+  --color-dark-card: #F9F9F9;
+  --color-dark-input: #F3F4F6;
+
+  --color-light: #ffffff;
+  --color-light-alt: #FAFAFA;
+  --color-light-border: #E5E7EB;
+
+  --font-sans: 'Afacad', sans-serif;
+
+  --radius-DEFAULT: 0px;
+  --radius-none: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+  --radius-3xl: 0px;
+  --radius-full: 9999px;
+
+  --shadow-minimal: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-minimal-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+}
 
 body {
-  color: #6e6e77;
+  color: #000000;
   background-color: #ffffff;
   font-family: 'Afacad', sans-serif;
   min-height: 100vh;
@@ -34,6 +61,6 @@ html {
 }
 
 ::selection {
-  background-color: #0119ff;
-  color: white;
+  background-color: #FFD600;
+  color: black;
 }
