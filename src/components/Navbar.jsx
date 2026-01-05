@@ -90,8 +90,14 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        {/* Mobile Menu Button */}
-                        <div className="md:hidden">
+                        {/* Mobile Elements Group */}
+                        <div className="flex items-center md:hidden">
+                            {/* Mobile Language Selector */}
+                            <div className="mr-4">
+                                <LanguageSelector />
+                            </div>
+
+                            {/* Mobile Menu Button */}
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
                                 className="p-2 text-dark hover:text-primary transition-colors"
