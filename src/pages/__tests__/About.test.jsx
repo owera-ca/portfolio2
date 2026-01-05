@@ -9,7 +9,7 @@ describe('About Page', () => {
                 <About />
             </BrowserRouter>
         );
-        expect(screen.getByText(/about owera/i)).toBeInTheDocument();
+        expect(screen.getByRole('heading', { name: /about owera/i })).toBeInTheDocument();
     });
 
     test('renders mission statement', () => {
