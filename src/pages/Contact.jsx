@@ -1,9 +1,46 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Loader2 } from 'lucide-react';
+import { useState } from 'react';
+import axios from 'axios';
 
 const Contact = () => {
     const { t } = useTranslation();
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+    const [status, setStatus] = useState('IDLE'); // IDLE, LOADING, SUCCESS, ERROR
+    const [responseMessage, setResponseMessage] = useState('');
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.type === 'email' ? 'email' : e.target.type === 'text' ? 'name' : 'message']: e.target.value
+        });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setStatus('LOADING');
+        setResponseMessage('');
+
+        try {
+            const response = await axios.post('/contact.php', formData); // Adjust URL if needed
+            if (response.data.success) {
+                setStatus('SUCCESS');
+                setResponseMessage(t('contact.successMessage') || 'Message sent successfully!');
+                setFormData({ name: '', email: '', message: '' });
+            } else {
+                throw new Error(response.data.message || 'Failed to send message');
+            }
+        } catch (error) {
+            setStatus('ERROR');
+            setResponseMessage(error.response?.data?.message || error.message || t('contact.errorMessage') || 'An error occurred. Please try again.');
+        }
+    };
+
     return (
         <div className="min-h-screen py-32 container mx-auto px-4 font-sans selection:bg-primary selection:text-white">
             <motion.div
@@ -74,7 +111,7 @@ const Contact = () => {
                     {/* Contact Form */}
                     <div className="bg-white p-10 border border-gray-100 relative hover:shadow-tekup transition-all duration-300">
                         <h3 className="text-2xl font-bold text-dark mb-8 tracking-tight">{t('contact.sendMessage')}</h3>
-                        <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                        <form className="space-y-6" onSubmit={handleSubmit}>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-xs font-bold text-gray-500 mb-2 uppercase tracking-wider">{t('contact.nameLabel')}</label>
@@ -82,6 +119,10 @@ const Contact = () => {
                                         type="text"
                                         className="w-full bg-light-alt border border-gray-200 p-4 text-dark focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors placeholder-gray-400"
                                         placeholder={t('contact.placeholders.name')}
+                                        value={formData.name}
+                                        onChange={handleChange}
+                                        required
+                                        disabled={status === 'LOADING'}
                                     />
                                 </div>
                                 <div>
@@ -90,6 +131,10 @@ const Contact = () => {
                                         type="email"
                                         className="w-full bg-light-alt border border-gray-200 p-4 text-dark focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors placeholder-gray-400"
                                         placeholder={t('contact.placeholders.email')}
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        required
+                                        disabled={status === 'LOADING'}
                                     />
                                 </div>
                             </div>
@@ -99,13 +144,35 @@ const Contact = () => {
                                     rows="4"
                                     className="w-full bg-light-alt border border-gray-200 p-4 text-dark focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors resize-none placeholder-gray-400"
                                     placeholder={t('contact.placeholders.message')}
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    required
+                                    disabled={status === 'LOADING'}
                                 />
                             </div>
+
+                            {status === 'SUCCESS' && (
+                                <div className="p-4 bg-green-50 text-green-600 text-sm font-medium rounded">
+                                    {responseMessage}
+                                </div>
+                            )}
+
+                            {status === 'ERROR' && (
+                                <div className="p-4 bg-red-50 text-red-600 text-sm font-medium rounded">
+                                    {responseMessage}
+                                </div>
+                            )}
+
                             <button
                                 type="submit"
-                                className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-5 transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-tekup hover:-translate-y-1 uppercase tracking-wider text-sm"
+                                disabled={status === 'LOADING'}
+                                className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-5 transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-tekup hover:-translate-y-1 uppercase tracking-wider text-sm disabled:opacity-70 disabled:cursor-not-allowed"
                             >
-                                {t('contact.sendButton')} <Send size={18} />
+                                {status === 'LOADING' ? (
+                                    <>Processing <Loader2 size={18} className="animate-spin" /></>
+                                ) : (
+                                    <>{t('contact.sendButton')} <Send size={18} /></>
+                                )}
                             </button>
                         </form>
                     </div>
