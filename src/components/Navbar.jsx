@@ -2,8 +2,11 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Mail, Phone, MapPin } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import LanguageSelector from './LanguageSelector';
 
 const Navbar = () => {
+    const { t } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const location = useLocation();
@@ -22,11 +25,11 @@ const Navbar = () => {
     }, []);
 
     const links = [
-        { name: 'Home', path: '/' },
-        { name: 'Services', path: '/services' },
-        { name: 'Projects', path: '/projects' },
-        { name: 'About', path: '/about' },
-        { name: 'Contact', path: '/contact' },
+        { name: t('nav.home'), path: '/' },
+        { name: t('nav.services'), path: '/services' },
+        { name: t('nav.projects'), path: '/projects' },
+        { name: t('nav.about'), path: '/about' },
+        { name: t('nav.contact'), path: '/contact' },
     ];
 
     const isActive = (path) => location.pathname === path;
@@ -79,8 +82,11 @@ const Navbar = () => {
                                 ))}
                                 {/* CTA Button - Minimal */}
                                 <Link to="/contact" className={`ml-6 px-8 py-3 text-sm font-bold uppercase tracking-wider text-dark bg-primary hover:bg-primary-dark transition-all duration-300 shadow-minimal hover:shadow-minimal-hover hover:-translate-y-1`}>
-                                    GET A QUOTE
+                                    {t('nav.getQuote')}
                                 </Link>
+                                <div className="ml-6 border-l border-gray-200 pl-6 h-6 flex items-center">
+                                    <LanguageSelector />
+                                </div>
                             </div>
                         </div>
 
@@ -121,7 +127,7 @@ const Navbar = () => {
                                 ))}
                                 <div className="pt-4 mt-4 border-t border-gray-100">
                                     <Link to="/contact" onClick={() => setIsOpen(false)} className="block w-full py-4 text-center font-bold text-dark bg-primary hover:bg-primary-dark uppercase tracking-widest transition-all">
-                                        Get A Quote
+                                        {t('nav.getQuote')}
                                     </Link>
                                 </div>
                             </div>

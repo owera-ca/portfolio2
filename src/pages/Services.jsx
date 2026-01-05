@@ -1,37 +1,40 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Database, Layout, Smartphone, Cloud, Shield, Terminal } from 'lucide-react';
 
 const Services = () => {
+    const { t } = useTranslation();
+
     const services = [
         {
             icon: <Layout size={32} />,
-            title: "Web Development",
-            desc: "Modern, responsive websites and web applications using React, Next.js, and other leading frameworks."
+            title: t('services.items.webDev'),
+            desc: t('services.items.webDevDesc')
         },
         {
             icon: <Smartphone size={32} />,
-            title: "Mobile App Development",
-            desc: "Native and cross-platform mobile solutions for iOS and Android.",
+            title: t('services.items.mobileDev'),
+            desc: t('services.items.mobileDevDesc'),
         },
         {
             icon: <Database size={32} />,
-            title: "Backend Architecture",
-            desc: "Robust API development, database design, and server-side logic."
+            title: t('services.items.backend'),
+            desc: t('services.items.backendDesc')
         },
         {
             icon: <Cloud size={32} />,
-            title: "Cloud Solutions",
-            desc: "Deployment, scaling, and management of cloud infrastructure on AWS, Azure, or GCP."
+            title: t('services.items.cloud'),
+            desc: t('services.items.cloudDesc')
         },
         {
             icon: <Shield size={32} />,
-            title: "Security Audits",
-            desc: "Identifying vulnerabilities and securing your digital assets."
+            title: t('services.items.security'),
+            desc: t('services.items.securityDesc')
         },
         {
             icon: <Terminal size={32} />,
-            title: "DevOps & CI/CD",
-            desc: "Streamlining your development pipeline for faster, more reliable releases."
+            title: t('services.items.devops'),
+            desc: t('services.items.devopsDesc')
         }
     ];
 
@@ -39,10 +42,10 @@ const Services = () => {
         <div className="min-h-screen py-32 container mx-auto px-4 font-sans selection:bg-primary selection:text-white">
             <div className="text-center mb-24 max-w-4xl mx-auto">
                 <h1 className="text-5xl md:text-7xl font-bold text-dark mb-8 tracking-tighter">
-                    Our <span className="text-primary">Services</span>.
+                    {t('services.title')} <span className="text-primary">{t('services.titleHighlight')}</span>.
                 </h1>
                 <p className="text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
-                    Comprehensive software engineering solutions tailored to complex business challenges. Built for scale, security, and speed.
+                    {t('services.desc')}
                 </p>
             </div>
 

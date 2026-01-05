@@ -1,0 +1,109 @@
+{
+    "nav": {
+        "home": "Startseite",
+        "services": "Dienstleistungen",
+        "projects": "Projekte",
+        "about": "Über uns",
+        "contact": "Kontakt",
+        "getQuote": "ANGEBOT ANFORDERN"
+    },
+    "hero": {
+        "title": "OWERA",
+        "subtitle": "Premium Software",
+        "subtitleHighlight": "Engineering",
+        "desc": "Wir entwickeln digitale Hochleistungslösungen mit Präzision und Eleganz.",
+        "startProject": "Projekt starten",
+        "viewPortfolio": "Portfolio ansehen"
+    },
+    "features": {
+        "title": "Präzisions-Engineering",
+        "customDev": "Individuelle Entwicklung",
+        "customDevDesc": "Maßgeschneiderte Softwarelösungen mit modernsten Technologien.",
+        "highPerf": "Hochleistung",
+        "highPerfDesc": "Geschwindigkeit und Effizienz stehen im Mittelpunkt jeder Anwendung, die wir entwickeln.",
+        "scalable": "Skalierbare Systeme",
+        "scalableDesc": "Architekturen, die nahtlos mit Ihrem Unternehmen wachsen."
+    },
+    "about": {
+        "title": "Über",
+        "titleHighlight": "Uns",
+        "intro1": "Owera ist ein spezialisiertes Softwareberatungsunternehmen unter dem Dach von",
+        "company": "16472320 Canada Inc",
+        "intro2": "Wir sind darauf spezialisiert, technologische Lösungen mit hoher Wirkung zu liefern, die unsere Philosophie verkörpern:",
+        "slogan": "Viel in Wenig",
+        "missionTitle": "Unsere Mission",
+        "missionDesc": "Komplexität vereinfachen. Wir glauben, dass die leistungsfähigste Software fähig, aber intuitiv, robust, aber effizient ist. Wir streben danach, maximalen Wert mit minimaler Reibung zu liefern.",
+        "approachTitle": "Unser Ansatz",
+        "approachDesc": "Wir kombinieren technisches Fachwissen mit tiefem Branchenwissen, um reale Probleme zu lösen. Vom ersten Konzept bis zur endgültigen Bereitstellung arbeiten wir eng mit unseren Kunden zusammen, um den Erfolg sicherzustellen.",
+        "footer": "Mit Sitz in Kanada bedienen wir Kunden weltweit, die Exzellenz bei ihren digitalen Produkten verlangen. Ob Sie eine vollständige digitale Transformation oder eine spezifische Softwarelösung benötigen, Owera ist Ihr Partner für Innovation."
+    },
+    "services": {
+        "title": "Unsere",
+        "titleHighlight": "Dienstleistungen",
+        "desc": "Umfassende Software-Engineering-Lösungen, zugeschnitten auf komplexe geschäftliche Herausforderungen. Gebaut für Skalierbarkeit, Sicherheit und Geschwindigkeit.",
+        "items": {
+            "webDev": "Webentwicklung",
+            "webDevDesc": "Moderne, responsive Websites und Webanwendungen mit React, Next.js und anderen führenden Frameworks.",
+            "mobileDev": "Mobile App Entwicklung",
+            "mobileDevDesc": "Native und plattformübergreifende mobile Lösungen für iOS und Android.",
+            "backend": "Backend-Architektur",
+            "backendDesc": "Robuste API-Entwicklung, Datenbankdesign und serverseitige Logik.",
+            "cloud": "Cloud-Lösungen",
+            "cloudDesc": "Bereitstellung, Skalierung und Verwaltung der Cloud-Infrastruktur auf AWS, Azure oder GCP.",
+            "security": "Sicherheits-Audits",
+            "securityDesc": "Identifizierung von Schwachstellen und Sicherung Ihrer digitalen Vermögenswerte.",
+            "devops": "DevOps & CI/CD",
+            "devopsDesc": "Optimierung Ihrer Entwicklungspipeline für schnellere und zuverlässigere Releases."
+        }
+    },
+    "projects": {
+        "title": "Ausgewählte",
+        "titleHighlight": "Arbeiten",
+        "subtitle": "Ein Schaufenster technischer Exzellenz und technischer Präzision.",
+        "liveDemo": "Live-Demo",
+        "sourceCode": "Quellcode",
+        "items": {
+            "p1Title": "FinTech-Dashboard",
+            "p1Cat": "Webanwendung",
+            "p1Desc": "Ein Echtzeit-Finanzanalyse-Dashboard, das hochfrequente Datenaktualisierungen verarbeitet.",
+            "p2Title": "E-Commerce-Plattform",
+            "p2Cat": "Full Stack",
+            "p2Desc": "Skalierbare Marktplatzlösung mit integrierter Zahlungsabwicklung und Bestandsverwaltung.",
+            "p3Title": "Gesundheitsportal",
+            "p3Cat": "Enterprise",
+            "p3Desc": "Sicheres Patientenmanagementsystem gemäß den Gesundheitsvorschriften."
+        }
+    },
+    "contact": {
+        "title": "Nehmen Sie",
+        "titleHighlight": "Kontakt auf",
+        "subtitle": "Bereit, Ihre Zukunft zu gestalten? Lassen Sie uns gemeinsam etwas Außergewöhnliches bauen.",
+        "details": "Kontaktdetails",
+        "emailLabel": "E-Mail",
+        "phoneLabel": "Telefon",
+        "locationLabel": "Standort",
+        "locationValue": "Kanada",
+        "locationSub": "16472320 Canada Inc.",
+        "sendMessage": "Nachricht senden",
+        "nameLabel": "Name",
+        "emailInputLabel": "E-Mail",
+        "messageLabel": "Nachricht",
+        "sendButton": "Nachricht senden",
+        "placeholders": {
+            "name": "Max Mustermann",
+            "email": "max@beispiel.de",
+            "message": "Erzählen Sie uns von Ihrem Projekt..."
+        }
+    },
+    "footer": {
+        "desc": "Premium Softwareberatung. Wir bauen die digitale Zukunft mit Präzision und Eleganz.",
+        "umbrella": "Ein Dachunternehmen der 16472320 Canada Inc.",
+        "quickLinks": "Schnelllinks",
+        "connect": "Verbinden",
+        "emailUs": "E-Mail schreiben",
+        "callUs": "Anrufen",
+        "copyright": "© {{year}} Owera. Alle Rechte vorbehalten.",
+        "privacy": "Datenschutzrichtlinie",
+        "terms": "Nutzungsbedingungen"
+    }
+}

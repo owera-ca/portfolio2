@@ -9,8 +9,8 @@ describe('Projects Page', () => {
                 <Projects />
             </BrowserRouter>
         );
-        expect(screen.getByText(/selected/i)).toBeInTheDocument();
-        expect(screen.getByText(/work/i)).toBeInTheDocument();
+        expect(screen.getAllByText(/projects.title/i)[0]).toBeInTheDocument();
+        expect(screen.getAllByText(/projects.titleHighlight/i)[0]).toBeInTheDocument();
     });
 
     test('renders project cards', () => {
@@ -19,7 +19,7 @@ describe('Projects Page', () => {
                 <Projects />
             </BrowserRouter>
         );
-        expect(screen.getByText(/fintech dashboard/i)).toBeInTheDocument();
-        expect(screen.getByText(/e-commerce platform/i)).toBeInTheDocument();
+        expect(screen.getAllByText(/projects.items.p1Title/i)[0]).toBeInTheDocument();
+        expect(screen.getAllByText(/projects.items.p2Title/i)[0]).toBeInTheDocument();
     });
 });

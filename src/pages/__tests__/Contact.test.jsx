@@ -9,8 +9,8 @@ describe('Contact Page', () => {
                 <Contact />
             </BrowserRouter>
         );
-        expect(screen.getByText(/get in/i)).toBeInTheDocument();
-        expect(screen.getByText(/touch/i)).toBeInTheDocument();
+        expect(screen.getAllByText(/contact.title/i)[0]).toBeInTheDocument();
+        expect(screen.getAllByText(/contact.titleHighlight/i)[0]).toBeInTheDocument();
     });
 
     test('renders contact details and form', () => {
@@ -20,7 +20,7 @@ describe('Contact Page', () => {
             </BrowserRouter>
         );
         expect(screen.getByText(/sandeep.kumar@owera.ca/i)).toBeInTheDocument();
-        expect(screen.getByText(/send a message/i)).toBeInTheDocument();
-        expect(screen.getByPlaceholderText(/john doe/i)).toBeInTheDocument();
+        expect(screen.getByText(/contact.sendMessage/i)).toBeInTheDocument();
+        expect(screen.getByPlaceholderText(/contact.placeholders.name/i)).toBeInTheDocument();
     });
 });

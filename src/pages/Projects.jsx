@@ -1,26 +1,28 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { ExternalLink, Github } from 'lucide-react';
 
 const Projects = () => {
+    const { t } = useTranslation();
     const projects = [
         {
-            title: "FinTech Dashboard",
-            category: "Web Application",
-            description: "A real-time financial analytics dashboard handling high-frequency data updates.",
+            title: t('projects.items.p1Title'),
+            category: t('projects.items.p1Cat'),
+            description: t('projects.items.p1Desc'),
             tech: ["React", "D3.js", "Node.js"],
             image: "linear-gradient(to bottom right, #1a1a1a, #2a2a2a)" // Placeholder gradient
         },
         {
-            title: "E-Commerce Platform",
-            category: "Full Stack",
-            description: "Scalable marketplace solution with integrated payment processing and inventory management.",
+            title: t('projects.items.p2Title'),
+            category: t('projects.items.p2Cat'),
+            description: t('projects.items.p2Desc'),
             tech: ["Next.js", "Stripe", "PostgreSQL"],
             image: "linear-gradient(to bottom right, #1a1a1a, #2a2a2a)"
         },
         {
-            title: "Healthcare Portal",
-            category: "Enterprise",
-            description: "Secure patient management system compliant with healthcare regulations.",
+            title: t('projects.items.p3Title'),
+            category: t('projects.items.p3Cat'),
+            description: t('projects.items.p3Desc'),
             tech: ["React", "TypeScript", "Python"],
             image: "linear-gradient(to bottom right, #1a1a1a, #2a2a2a)"
         }
@@ -30,10 +32,10 @@ const Projects = () => {
         <div className="min-h-screen py-32 container mx-auto px-4 font-sans">
             <div className="text-center mb-24">
                 <h1 className="text-5xl md:text-7xl font-bold text-dark mb-8 tracking-tighter">
-                    Selected <span className="text-primary">Work</span>.
+                    {t('projects.title')} <span className="text-primary">{t('projects.titleHighlight')}</span>.
                 </h1>
                 <p className="text-xl text-gray-500 max-w-2xl mx-auto">
-                    A showcase of technical excellence and engineering precision.
+                    {t('projects.subtitle')}
                 </p>
             </div>
 
@@ -77,10 +79,10 @@ const Projects = () => {
 
                             <div className="flex gap-6 pt-6 border-t border-gray-100">
                                 <button className="text-dark hover:text-primary transition-colors flex items-center gap-2 text-xs font-bold uppercase tracking-wider">
-                                    <ExternalLink size={16} /> Live Demo
+                                    <ExternalLink size={16} /> {t('projects.liveDemo')}
                                 </button>
                                 <button className="text-dark hover:text-primary transition-colors flex items-center gap-2 text-xs font-bold uppercase tracking-wider">
-                                    <Github size={16} /> Source Code
+                                    <Github size={16} /> {t('projects.sourceCode')}
                                 </button>
                             </div>
                         </div>

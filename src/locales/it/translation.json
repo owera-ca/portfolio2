@@ -1,0 +1,109 @@
+{
+    "nav": {
+        "home": "Home",
+        "services": "Servizi",
+        "projects": "Progetti",
+        "about": "Chi siamo",
+        "contact": "Contatti",
+        "getQuote": "RICHIEDI PREVENTIVO"
+    },
+    "hero": {
+        "title": "OWERA",
+        "subtitle": "Software Premium",
+        "subtitleHighlight": "Ingegneria",
+        "desc": "Costruiamo soluzioni digitali ad alte prestazioni con precisione ed eleganza.",
+        "startProject": "Inizia un Progetto",
+        "viewPortfolio": "Vedi Portfolio"
+    },
+    "features": {
+        "title": "Ingegneria di Precisione",
+        "customDev": "Sviluppo Su Misura",
+        "customDevDesc": "Soluzioni software personalizzate costruite con tecnologie all'avanguardia.",
+        "highPerf": "Alte Prestazioni",
+        "highPerfDesc": "Velocità ed efficienza al centro di ogni applicazione che costruiamo.",
+        "scalable": "Sistemi Scalabili",
+        "scalableDesc": "Architetture progettate per crescere senza problemi con il tuo business."
+    },
+    "about": {
+        "title": "Chi",
+        "titleHighlight": "Siamo",
+        "intro1": "Owera è una società di consulenza software dedicata che opera sotto l'ombrello di",
+        "company": "16472320 Canada Inc",
+        "intro2": "Ci specializziamo nel fornire soluzioni tecnologiche ad alto impatto che incarnano la nostra filosofia:",
+        "slogan": "Molto in Poco",
+        "missionTitle": "La Nostra Missione",
+        "missionDesc": "Semplificare la complessità. Crediamo che il software più potente sia capace ma intuitivo, robusto ma efficiente. Ci sforziamo di fornire il massimo valore con il minimo attrito.",
+        "approachTitle": "Il Nostro Approccio",
+        "approachDesc": "Combiniamo competenza tecnica con una profonda conoscenza del settore per risolvere problemi reali. Dal concetto iniziale al rilascio finale, lavoriamo a stretto contatto con i nostri clienti per garantire il successo.",
+        "footer": "Con sede in Canada, serviamo clienti a livello globale che richiedono eccellenza nei loro prodotti digitali. Sia che tu abbia bisogno di una trasformazione digitale completa o di una soluzione software specifica, Owera è il tuo partner nell'innovazione."
+    },
+    "services": {
+        "title": "I Nostri",
+        "titleHighlight": "Servizi",
+        "desc": "Soluzioni complete di ingegneria software su misura per sfide aziendali complesse. Costruite per scalabilità, sicurezza e velocità.",
+        "items": {
+            "webDev": "Sviluppo Web",
+            "webDevDesc": "Siti web moderni e responsivi e applicazioni web utilizzando React, Next.js e altri framework leader.",
+            "mobileDev": "Sviluppo App Mobile",
+            "mobileDevDesc": "Soluzioni mobili native e multipiattaforma per iOS e Android.",
+            "backend": "Architettura Backend",
+            "backendDesc": "Sviluppo API robusto, progettazione di database e logica lato server.",
+            "cloud": "Soluzioni Cloud",
+            "cloudDesc": "Distribuzione, scalabilità e gestione dell'infrastruttura cloud su AWS, Azure o GCP.",
+            "security": "Audit di Sicurezza",
+            "securityDesc": "Identificazione delle vulnerabilità e protezione delle risorse digitali.",
+            "devops": "DevOps & CI/CD",
+            "devopsDesc": "Ottimizzazione della pipeline di sviluppo per rilasci più veloci e affidabili."
+        }
+    },
+    "projects": {
+        "title": "Lavori",
+        "titleHighlight": "Selezionati",
+        "subtitle": "Una vetrina di eccellenza tecnica e precisione ingegneristica.",
+        "liveDemo": "Demo Live",
+        "sourceCode": "Codice Sorgente",
+        "items": {
+            "p1Title": "Dashboard FinTech",
+            "p1Cat": "Applicazione Web",
+            "p1Desc": "Una dashboard di analisi finanziaria in tempo reale che gestisce aggiornamenti dati ad alta frequenza.",
+            "p2Title": "Piattaforma E-Commerce",
+            "p2Cat": "Full Stack",
+            "p2Desc": "Soluzione marketplace scalabile con elaborazione dei pagamenti integrata e gestione dell'inventario.",
+            "p3Title": "Portale Sanitario",
+            "p3Cat": "Enterprise",
+            "p3Desc": "Sistema di gestione pazienti sicuro e conforme alle normative sanitarie."
+        }
+    },
+    "contact": {
+        "title": "Mettiti in",
+        "titleHighlight": "Contatto",
+        "subtitle": "Pronto a progettare il tuo futuro? Costruiamo qualcosa di straordinario insieme.",
+        "details": "Dettagli di Contatto",
+        "emailLabel": "Email",
+        "phoneLabel": "Telefono",
+        "locationLabel": "Posizione",
+        "locationValue": "Canada",
+        "locationSub": "16472320 Canada Inc.",
+        "sendMessage": "Invia un Messaggio",
+        "nameLabel": "Nome",
+        "emailInputLabel": "Email",
+        "messageLabel": "Messaggio",
+        "sendButton": "Invia Messaggio",
+        "placeholders": {
+            "name": "Mario Rossi",
+            "email": "mario@esempio.it",
+            "message": "Parlaci del tuo progetto..."
+        }
+    },
+    "footer": {
+        "desc": "Consulenza software premium. Costruiamo il futuro digitale con precisione ed eleganza.",
+        "umbrella": "Una società ombrello di 16472320 Canada Inc.",
+        "quickLinks": "Link Rapidi",
+        "connect": "Connettiti",
+        "emailUs": "Scrivici",
+        "callUs": "Chiamaci",
+        "copyright": "© {{year}} Owera. Tutti i diritti riservati.",
+        "privacy": "Privacy Policy",
+        "terms": "Termini di Servizio"
+    }
+}

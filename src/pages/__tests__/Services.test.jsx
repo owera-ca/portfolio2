@@ -9,8 +9,8 @@ describe('Services Page', () => {
                 <Services />
             </BrowserRouter>
         );
-        const heading = screen.getByRole('heading', { name: /our services/i });
-        expect(heading).toBeInTheDocument();
+        const headings = screen.getAllByText(/services.title/i);
+        expect(headings[0]).toBeInTheDocument();
     });
 
     test('renders specific service items', () => {
@@ -19,7 +19,7 @@ describe('Services Page', () => {
                 <Services />
             </BrowserRouter>
         );
-        expect(screen.getByText(/web development/i)).toBeInTheDocument();
-        expect(screen.getByText(/cloud solutions/i)).toBeInTheDocument();
+        expect(screen.getAllByText(/services.items.webDev/i)[0]).toBeInTheDocument();
+        expect(screen.getAllByText(/services.items.cloud/i)[0]).toBeInTheDocument();
     });
 });

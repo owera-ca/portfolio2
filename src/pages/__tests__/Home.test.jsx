@@ -9,7 +9,8 @@ describe('Home Page', () => {
                 <Home />
             </BrowserRouter>
         );
-        const heading = screen.getByText(/owera/i);
+        // Expecting the translation key because of the mock
+        const heading = screen.getByText(/hero.title/i);
         expect(heading).toBeInTheDocument();
     });
 
@@ -19,7 +20,8 @@ describe('Home Page', () => {
                 <Home />
             </BrowserRouter>
         );
-        const button = screen.getByText(/start a project/i);
+        // Expecting the translation key
+        const button = screen.getByText(/hero.startProject/i);
         expect(button).toBeInTheDocument();
     });
 });

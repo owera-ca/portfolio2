@@ -9,7 +9,9 @@ describe('About Page', () => {
                 <About />
             </BrowserRouter>
         );
-        expect(screen.getByRole('heading', { name: /about owera/i })).toBeInTheDocument();
+        // "About" text from key 'about.title'. Using getAllByText as it might match multiple elements (title + highlight pattern)
+        const headings = screen.getAllByText(/about.title/i);
+        expect(headings[0]).toBeInTheDocument();
     });
 
     test('renders mission statement', () => {
@@ -18,7 +20,7 @@ describe('About Page', () => {
                 <About />
             </BrowserRouter>
         );
-        expect(screen.getByText(/much in little/i)).toBeInTheDocument();
-        expect(screen.getByText(/our mission/i)).toBeInTheDocument();
+        expect(screen.getByText(/about.slogan/i)).toBeInTheDocument();
+        expect(screen.getByText(/about.missionTitle/i)).toBeInTheDocument();
     });
 });

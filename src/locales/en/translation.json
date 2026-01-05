@@ -1,0 +1,109 @@
+{
+    "nav": {
+        "home": "Home",
+        "services": "Services",
+        "projects": "Projects",
+        "about": "About",
+        "contact": "Contact",
+        "getQuote": "GET A QUOTE"
+    },
+    "hero": {
+        "title": "OWERA",
+        "subtitle": "Premium Software",
+        "subtitleHighlight": "Engineering",
+        "desc": "We build high-performance digital solutions with precision and elegance.",
+        "startProject": "Start a Project",
+        "viewPortfolio": "View Portfolio"
+    },
+    "features": {
+        "title": "Precision Engineering",
+        "customDev": "Custom Development",
+        "customDevDesc": "Tailored software solutions built with cutting-edge technologies.",
+        "highPerf": "High Performance",
+        "highPerfDesc": "Speed and efficiency at the core of every application we build.",
+        "scalable": "Scalable Systems",
+        "scalableDesc": "Architectures designed to grow seamlessly with your business."
+    },
+    "about": {
+        "title": "About",
+        "titleHighlight": "Owera",
+        "intro1": "Owera is a dedicated software consulting firm operating under the umbrella of",
+        "company": "16472320 Canada Inc",
+        "intro2": "We specialize in delivering high-impact technological solutions that embody our philosophy:",
+        "slogan": "Much in Little",
+        "missionTitle": "Our Mission",
+        "missionDesc": "To simplify complexity. We believe that the most powerful software is capable yet intuitive, robust yet efficient. We strive to deliver maximum value with minimal friction.",
+        "approachTitle": "Our Approach",
+        "approachDesc": "We combine technical expertise with deep industry knowledge to solve real-world problems. From initial concept to final deployment, we work closely with our clients to ensure success.",
+        "footer": "Based in Canada, we serve clients globally who demand excellence in their digital products. Whether you need a complete digital transformation or a specific software solution, Owera is your partner in innovation."
+    },
+    "services": {
+        "title": "Our",
+        "titleHighlight": "Services",
+        "desc": "Comprehensive software engineering solutions tailored to complex business challenges. Built for scale, security, and speed.",
+        "items": {
+            "webDev": "Web Development",
+            "webDevDesc": "Modern, responsive websites and web applications using React, Next.js, and other leading frameworks.",
+            "mobileDev": "Mobile App Development",
+            "mobileDevDesc": "Native and cross-platform mobile solutions for iOS and Android.",
+            "backend": "Backend Architecture",
+            "backendDesc": "Robust API development, database design, and server-side logic.",
+            "cloud": "Cloud Solutions",
+            "cloudDesc": "Deployment, scaling, and management of cloud infrastructure on AWS, Azure, or GCP.",
+            "security": "Security Audits",
+            "securityDesc": "Identifying vulnerabilities and securing your digital assets.",
+            "devops": "DevOps & CI/CD",
+            "devopsDesc": "Streamlining your development pipeline for faster, more reliable releases."
+        }
+    },
+    "projects": {
+        "title": "Selected",
+        "titleHighlight": "Work",
+        "subtitle": "A showcase of technical excellence and engineering precision.",
+        "liveDemo": "Live Demo",
+        "sourceCode": "Source Code",
+        "items": {
+            "p1Title": "FinTech Dashboard",
+            "p1Cat": "Web Application",
+            "p1Desc": "A real-time financial analytics dashboard handling high-frequency data updates.",
+            "p2Title": "E-Commerce Platform",
+            "p2Cat": "Full Stack",
+            "p2Desc": "Scalable marketplace solution with integrated payment processing and inventory management.",
+            "p3Title": "Healthcare Portal",
+            "p3Cat": "Enterprise",
+            "p3Desc": "Secure patient management system compliant with healthcare regulations."
+        }
+    },
+    "contact": {
+        "title": "Get in",
+        "titleHighlight": "Touch",
+        "subtitle": "Ready to engineer your future? Let's build something extraordinary together.",
+        "details": "Contact Details",
+        "emailLabel": "Email",
+        "phoneLabel": "Phone",
+        "locationLabel": "Location",
+        "locationValue": "Canada",
+        "locationSub": "16472320 Canada Inc.",
+        "sendMessage": "Send a Message",
+        "nameLabel": "Name",
+        "emailInputLabel": "Email",
+        "messageLabel": "Message",
+        "sendButton": "Send Message",
+        "placeholders": {
+            "name": "John Doe",
+            "email": "john@example.com",
+            "message": "Tell us about your project..."
+        }
+    },
+    "footer": {
+        "desc": "Premium software consulting. We build the digital future with precision and elegance.",
+        "umbrella": "An umbrella company of 16472320 Canada Inc.",
+        "quickLinks": "Quick Links",
+        "connect": "Connect",
+        "emailUs": "Email Us",
+        "callUs": "Call Us",
+        "copyright": "© {{year}} Owera. All rights reserved.",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
+    }
+}
