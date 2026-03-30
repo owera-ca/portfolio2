@@ -27,7 +27,7 @@
     "about": {
         "title": "Über",
         "titleHighlight": "Uns",
-        "intro1": "Owera ist ein spezialisiertes Softwareberatungsunternehmen unter dem Dach von",
+        "intro1": "Owera ist ein spezialisiertes Softwareberatungsunternehmen, das als Tochtergesellschaft von",
         "company": "16472320 Canada Inc",
         "intro2": "Wir sind darauf spezialisiert, technologische Lösungen mit hoher Wirkung zu liefern, die unsere Philosophie verkörpern:",
         "slogan": "Viel in Wenig",
@@ -97,7 +97,7 @@
     },
     "footer": {
         "desc": "Premium Softwareberatung. Wir bauen die digitale Zukunft mit Präzision und Eleganz.",
-        "umbrella": "Ein Dachunternehmen der 16472320 Canada Inc.",
+        "subsidiary": "Eine Tochtergesellschaft der 16472320 Canada Inc.",
         "quickLinks": "Schnelllinks",
         "connect": "Verbinden",
         "emailUs": "E-Mail schreiben",

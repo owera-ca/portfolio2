@@ -13,7 +13,7 @@ const Footer = () => {
                             {t('footer.desc')}
                         </p>
                         <p className="text-sm text-white/30">
-                            {t('footer.umbrella')}
+                            {t('footer.subsidiary')}
                         </p>
                     </div>
 

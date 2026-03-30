@@ -27,7 +27,7 @@
     "about": {
         "title": "Sobre",
         "titleHighlight": "Nosotros",
-        "intro1": "Owera es una firma de consultoría de software dedicada que opera bajo el paraguas de",
+        "intro1": "Owera es una firma de consultoría de software dedicada que opera como subsidiaria de",
         "company": "16472320 Canada Inc",
         "intro2": "Nos especializamos en entregar soluciones tecnológicas de alto impacto que encarnan nuestra filosofía:",
         "slogan": "Mucho en Poco",
@@ -97,7 +97,7 @@
     },
     "footer": {
         "desc": "Consultoría de software premium. Construimos el futuro digital con precisión y elegancia.",
-        "umbrella": "Una empresa paraguas de 16472320 Canada Inc.",
+        "subsidiary": "Una subsidiaria de 16472320 Canada Inc.",
         "quickLinks": "Enlaces Rápidos",
         "connect": "Conectar",
         "emailUs": "Escríbenos",

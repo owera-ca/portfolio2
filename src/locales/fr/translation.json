@@ -27,7 +27,7 @@
     "about": {
         "title": "À Propos",
         "titleHighlight": "De Nous",
-        "intro1": "Owera est une société de conseil en logiciels dédiée opérant sous l'égide de",
+        "intro1": "Owera est une société de conseil en logiciels dédiée opérant en tant que filiale de",
         "company": "16472320 Canada Inc",
         "intro2": "Nous sommes spécialisés dans la fourniture de solutions technologiques à fort impact qui incarnent notre philosophie :",
         "slogan": "Beaucoup dans Peu",
@@ -97,7 +97,7 @@
     },
     "footer": {
         "desc": "Conseil en logiciels premium. Nous construisons l'avenir numérique avec précision et élégance.",
-        "umbrella": "Une société faîtière de 16472320 Canada Inc.",
+        "subsidiary": "Une filiale de 16472320 Canada Inc.",
         "quickLinks": "Liens Rapides",
         "connect": "Connecter",
         "emailUs": "Écrivez-nous",
